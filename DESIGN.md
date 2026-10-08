@@ -60,6 +60,45 @@ typography:
     fontSize: "44px"
     fontWeight: 900
     lineHeight: 1
+  display-close:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(38px, 11vw, 104px)"
+    fontWeight: 900
+    lineHeight: 0.98
+    letterSpacing: "-0.02em"
+  pitch:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(17px, 1.7vw, 20px)"
+    fontWeight: 400
+    lineHeight: 1.55
+  title-step:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "21px"
+    fontWeight: 900
+    lineHeight: 1.15
+  note:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.55
+  small:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "14px"
+    fontWeight: 700
+    lineHeight: 1.15
+    letterSpacing: "0.04em"
+  wordmark:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "19px"
+    fontWeight: 900
+    lineHeight: 1
+    letterSpacing: "0.01em"
+  wordmark-sub:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "11.5px"
+    fontWeight: 800
+    lineHeight: 1
+    letterSpacing: "0.31em"
 rounded:
   r: "14px"
   focus: "6px"
