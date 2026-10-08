@@ -6,6 +6,7 @@
 <title>Enrique Valle Construction — Newark, NJ · Free estimates</title>
 <meta name="description" content="Home remodeling, kitchens and bathrooms, roofing, masonry, concrete and more in Newark, NJ. 45 years in the trades. Every job guaranteed. Call 973-789-7425 for a free estimate.">
 <meta name="theme-color" content="#172433">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Enrique Valle Construction — every job guaranteed">
 <meta property="og:description" content="45 years in the trades. Remodeling, roofing, masonry, concrete and more. Newark, NJ. Free estimates: 973-789-7425.">
 <style>
@@ -84,7 +85,7 @@ img,svg,canvas{display:block}
 .dim .rule::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:var(--chalk);transform:translateY(-50%)}
 .dim .rule i{position:absolute;top:50%;width:2px;height:22px;background:var(--chalk);transform:translateY(-50%) rotate(45deg)}
 .dim .rule i:first-child{left:6px}.dim .rule i:last-child{right:6px}
-.dim .lbl{position:absolute;left:50%;top:-30px;transform:translateX(-50%);white-space:nowrap;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--chalk)}
+.dim .lbl{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:0 10px;background:var(--ground);white-space:nowrap;font-size:14px;letter-spacing:.02em;color:var(--chalk)}
 .since blockquote{margin:44px 0 0;max-width:22em}
 .since blockquote p{margin:0;font-weight:800;font-size:clamp(26px,6.6vw,52px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
 .since blockquote p mark{background:none;color:var(--chalk)}
@@ -141,16 +142,18 @@ footer a{font-weight:700;color:var(--white);font-variant-numeric:tabular-nums}
 .dock.on{transform:none}
 .dock .btn{min-height:56px}
 
+@media (max-width:379px){.btn{font-size:15.5px;letter-spacing:0;gap:10px;padding:10px 14px}}
+
 /* ===== Desktop ===== */
 @media (min-width:760px){
   :root{--pad:40px}
   .bar{padding-top:22px}
   .mark b{font-size:22px}
   .bar-call{font-size:17px}
-  .hero{padding:120px 0 96px;margin-top:-84px}
+  .hero{padding:120px 0 40px;margin-top:-84px}
   .actions{grid-template-columns:auto auto;justify-content:start}
   .actions .btn{padding:10px 30px}
-  .since{padding:56px 0 96px}
+  .since{padding:16px 0 96px}
   .since-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
   .since blockquote{margin-top:0}
   .bays{grid-template-columns:repeat(3,1fr);column-gap:36px}
@@ -163,14 +166,14 @@ footer a{font-weight:700;color:var(--white);font-variant-numeric:tabular-nums}
   .dock{display:none}
 }
 @media (min-width:1080px){
-  .hero{min-height:min(86vh,820px);display:flex;flex-direction:column;justify-content:center}
+  .hero{min-height:min(86vh,820px);display:flex;flex-direction:column;justify-content:flex-end}
   .hero-in{width:100%}
   .hero-in{grid-template-columns:1.3fr .7fr;column-gap:48px;align-items:end}
   .hero-main{display:grid;gap:22px}
   .hero-list{display:block;align-self:end;padding-bottom:6px}
-  .hero-list ul{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--chalk)}
-  .hero-list li{display:flex;align-items:center;gap:12px;min-height:40px;border-bottom:1px solid rgba(245,197,24,.22);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase}
-  .hero-list svg{width:16px;height:16px;color:var(--chalk)}
+  .hero-list ul{list-style:none;margin:0;padding:0}
+  .hero-list li{white-space:nowrap;display:flex;align-items:center;gap:12px;min-height:40px;border-bottom:1px solid rgba(245,197,24,.22);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+  .hero-list svg{flex:none;width:16px;height:16px;color:var(--chalk)}
   .services .also{display:none}
 }
 </style>
@@ -209,18 +212,18 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <a class="btn btn-alt" href="#services"><span>What I do<small>Remodels to roofing</small></span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
       </div>
     </div>
-    <div class="hero-list" aria-hidden="true">
-      <ul>
-        <li><svg><use href="#i-tick"/></svg>Home remodeling</li>
-        <li><svg><use href="#i-tick"/></svg>Kitchens &amp; bathrooms</li>
-        <li><svg><use href="#i-tick"/></svg>Masonry</li>
-        <li><svg><use href="#i-tick"/></svg>Decks &amp; fences</li>
-        <li><svg><use href="#i-tick"/></svg>Roofing</li>
-        <li><svg><use href="#i-tick"/></svg>Windows &amp; doors</li>
-        <li><svg><use href="#i-tick"/></svg>Flooring</li>
-        <li><svg><use href="#i-tick"/></svg>Painting</li>
-        <li><svg><use href="#i-tick"/></svg>Siding</li>
-        <li><svg><use href="#i-tick"/></svg>Concrete work &amp; much more</li>
+    <div class="hero-list">
+      <ul aria-label="Services">
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Home remodeling</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Kitchens &amp; bathrooms</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Masonry</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Decks &amp; fences</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Roofing</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Windows &amp; doors</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Flooring</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Painting</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Siding</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Concrete work &amp; much more</li>
       </ul>
     </div>
   </div>
@@ -232,10 +235,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <h2 class="sr" id="since-h">In the trades since 1981</h2>
       <div class="dim" role="img" aria-label="From 1981 to today: 45 years in the trades">
         <span>1981</span>
-        <span class="rule"><i></i><span class="lbl">45+ years in the trades</span><i></i></span>
+        <span class="rule"><i></i><span class="lbl">45+ years</span><i></i></span>
         <span>TODAY</span>
       </div>
-      <p class="note">Over 45 years of hands-on work, from foundations and concrete to finished kitchens.</p>
+      <p class="note">Over 45 years of hands-on work, from concrete and masonry to finished kitchens.</p>
     </div>
     <figure style="margin:0">
       <blockquote><p>“Because I take real pride in my work, <mark>every job I take on comes guaranteed.</mark>”</p></blockquote>
@@ -290,7 +293,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <ol class="steps">
       <li><h3>Call me</h3><p>Any time, at <a href="tel:+19737897425">973-789-7425</a>.</p></li>
       <li><h3>I stop by</h3><p>We set a time, I look at the job in person, and you get a free estimate.</p></li>
-      <li><h3>Done right, guaranteed</h3><p>Every job I take on comes guaranteed.</p></li>
+      <li><h3>Done right, guaranteed</h3><p>The work gets finished, and it’s backed by my guarantee.</p></li>
     </ol>
   </div>
 </section>
@@ -579,8 +582,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     return [[px-eL,py+eL*sl,px,py],[px,py,px+eR,py+eR*sl],[-8,ground,w+8,ground-(phone?10:14)]];
   }
   function closeLayout(w,h,sec){
-    var phone=w<760,px=phone?w*0.5:w*0.3,py=phone?34:52,sl=phone?0.42:0.34,e=phone?w*0.62:w*0.45;
-    return [[px-e,py+e*sl,px,py],[px,py,px+e,py+e*sl]];
+    // Same roof as the hero, eaves clear the name
+    var phone=w<760,sr=sec.getBoundingClientRect(),hr=sec.querySelector('h2').getBoundingClientRect();
+    var top=hr.top-sr.top+(phone?6:4),left=hr.left-sr.left,right=Math.min(w-left,hr.right-sr.left+40);
+    var px=phone?w*0.5:left+(right-left)*0.42,py=Math.max(phone?28:40,top-(phone?62:110));
+    var sl=(top-10-py)/Math.max(40,px-left+10),eL=px+8,eR=phone?w+8-px:right-px;
+    return [[px-eL,py+eL*sl,px,py],[px,py,px+eR,py+eR*sl]];
   }
 
   /* ---- Wire up ---- */
@@ -590,7 +597,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   document.querySelectorAll('[data-seam]').forEach(function(el){surfaces.push(new Seam(el))});
   hero.classList.add('live');
 
-  function resizeAll(){surfaces.forEach(function(s){s.resize()})}
+  function resizeAll(){surfaces.forEach(function(s){s.resize();if(REDUCED)s.frame(0,0)})}
   resizeAll();
   var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){resizeAll();wake()},120)});
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(resizeAll);
