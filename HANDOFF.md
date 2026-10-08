@@ -25,6 +25,7 @@
 - **No work photos at all.** The flyer's background art (hard hat, framing) is stock/AI, not his work, so it isn't used. A proof section is the first thing to add once he sends photos.
 - No hours, email, service-area towns, reviews, prices, licence/insurance. None are shown.
 - Texting unconfirmed: no SMS button.
+- **No Facebook link preview image.** `og:image` needs an absolute URL, so it waits until the site is hosted (GitHub Pages isn't turned on). Then render the phone hero at 1200x630 as `og.png` and add `og:image`, `og:image:width/height` and `og:url`. Until then the shared link shows a text-only card.
 
 ## Questions for the owner
 - Is the business name Enrique Valle Construction? Who's Kelvin, and should the page say "I" or "we"?
@@ -42,6 +43,10 @@
 - A plumb-bob line hanging in the hero you can swing.
 - Text-to-book module once texting is confirmed.
 - Spanish toggle (Newark has a large Spanish-speaking population; his name suggests he may prefer it) — ask first.
+
+## Review round (done once, then stopped)
+Fixed from the finish review: reduced-motion users got blank canvases after fonts loaded (now redrawn); an invented "foundations" wording; the "45+ years" label read like an eyebrow (now written on the dimension line); desktop list had a side stripe, shrinking ticks and was hidden from screen readers; a dead band under the desktop hero; the guarantee line repeated word for word in step 3; the Call button wrapped at 360px; the closing gable cut through the name on desktop.
+Left for you: the 1981→TODAY dimension rule is static CSS, not a pluckable string; the pale services slab has no chalk marks on it beyond blue text. Both are good candidates to bring alive.
 
 ## Not verified
 - Real-device touch feel (only simulated touch sweeps headlessly), iOS/Android `tel:` handoff from Facebook's in-app browser, frame rate on old phones, sticky bar behavior with the in-app browser's toolbar.

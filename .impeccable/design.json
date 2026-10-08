@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T23:55:42.157139+00:00",
+  "title": "Design System: Enrique Valle Construction",
+  "extensions": {
+    "colorMeta": {
+      "slate-ground": {
+        "role": "neutral",
+        "displayName": "Slate Ground",
+        "canonical": "oklch(25.6% 0.034 253)",
+        "tonalRamp": [
+          "#020c19",
+          "#182534",
+          "#334151",
+          "#505f71",
+          "#6f7f91",
+          "#90a0b3",
+          "#b5c6da",
+          "#dff1ff"
+        ]
+      },
+      "slate-raised": {
+        "role": "neutral",
+        "displayName": "Slate Raised",
+        "canonical": "oklch(29.6% 0.042 252)",
+        "tonalRamp": [
+          "#010b1c",
+          "#142538",
+          "#304155",
+          "#4d5f75",
+          "#6c7f96",
+          "#8ca1b8",
+          "#b1c6df",
+          "#dbf1ff"
+        ]
+      },
+      "slate-deep": {
+        "role": "neutral",
+        "displayName": "Slate Deep",
+        "canonical": "oklch(24.0% 0.036 254)",
+        "tonalRamp": [
+          "#020b1a",
+          "#182535",
+          "#334153",
+          "#505f72",
+          "#6f7f93",
+          "#90a0b5",
+          "#b5c6dc",
+          "#dff0ff"
+        ]
+      },
+      "yellow-chalk": {
+        "role": "primary",
+        "displayName": "Yellow Chalk",
+        "canonical": "oklch(84.2% 0.168 90)",
+        "tonalRamp": [
+          "#1d0200",
+          "#421500",
+          "#613500",
+          "#825400",
+          "#a37500",
+          "#c69700",
+          "#eebe00",
+          "#ffec8d"
+        ]
+      },
+      "seam-chalk": {
+        "role": "primary",
+        "displayName": "Seam Chalk",
+        "canonical": "oklch(75.2% 0.154 89)",
+        "tonalRamp": [
+          "#1e0200",
+          "#411600",
+          "#603500",
+          "#805500",
+          "#a27600",
+          "#c59700",
+          "#ecbe33",
+          "#ffeb8d"
+        ]
+      },
+      "chalk-white": {
+        "role": "neutral",
+        "displayName": "Chalk White",
+        "canonical": "oklch(95.9% 0.007 248)",
+        "tonalRamp": [
+          "#090b0e",
+          "#212427",
+          "#3d4043",
+          "#5b5e61",
+          "#7a7e81",
+          "#9b9fa3",
+          "#c1c5c8",
+          "#ebeff3"
+        ]
+      },
+      "dust-grey": {
+        "role": "neutral",
+        "displayName": "Dust Grey",
+        "canonical": "oklch(79.2% 0.028 250)",
+        "tonalRamp": [
+          "#030c17",
+          "#192531",
+          "#35414e",
+          "#525f6d",
+          "#717f8e",
+          "#92a0b0",
+          "#b7c6d6",
+          "#e1f0ff"
+        ]
+      },
+      "slab": {
+        "role": "neutral",
+        "displayName": "Slab",
+        "canonical": "oklch(92.9% 0.016 86)",
+        "tonalRamp": [
+          "#0e0b05",
+          "#27241b",
+          "#433f36",
+          "#615d54",
+          "#817d73",
+          "#a39e94",
+          "#c8c4b9",
+          "#f3eee3"
+        ]
+      },
+      "slab-muted": {
+        "role": "neutral",
+        "displayName": "Slab Muted",
+        "canonical": "oklch(44.8% 0.040 255)",
+        "tonalRamp": [
+          "#020b1c",
+          "#172537",
+          "#324155",
+          "#4f5f74",
+          "#6e7f95",
+          "#8ea0b8",
+          "#b3c6de",
+          "#ddf0ff"
+        ]
+      },
+      "blue-chalk": {
+        "role": "secondary",
+        "displayName": "Blue Chalk",
+        "canonical": "oklch(50.1% 0.124 255)",
+        "tonalRamp": [
+          "#00003b",
+          "#001f5d",
+          "#003e7f",
+          "#265ea1",
+          "#477fc5",
+          "#67a1ea",
+          "#8cc7ff",
+          "#b7f3ff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline and closing name; 900 uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings; 900 uppercase."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "The owner's guarantee quote; the only large sentence-case type."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Bay and step headings; 900 uppercase."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, measure 34-36em."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tick-list items; 800 uppercase."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button labels; 900 uppercase with a 14px tabular sub-line."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Step counters in yellow chalk."
+      }
+    },
+    "alphaRules": [
+      {
+        "name": "step-rule",
+        "value": "rgba(245,197,24,.28)"
+      },
+      {
+        "name": "hero-list-rule",
+        "value": "rgba(245,197,24,.22)"
+      },
+      {
+        "name": "bay-rule",
+        "value": "rgba(44,100,168,.55)"
+      },
+      {
+        "name": "tick-rule",
+        "value": "rgba(23,36,51,.14)"
+      },
+      {
+        "name": "footer-rule",
+        "value": "rgba(174,189,205,.16)"
+      },
+      {
+        "name": "outline-hover-wash",
+        "value": "rgba(245,197,24,.08)"
+      }
+    ],
+    "shadows": [
+      {
+        "name": "string-cast-canvas",
+        "value": "stroke rgba(5,10,18,.32) 3.2px, blur(1.6px), offset (lift*0.6, lift) where lift = |displacement|*0.12 + 2.5",
+        "purpose": "Under every canvas chalk line; grows as the line is pulled."
+      },
+      {
+        "name": "string-cast-seam",
+        "value": "stroke rgba(6,12,20,.28) 3px, blur(1.5px), offset (1.5px, 3px + |displacement|*0.1)",
+        "purpose": "Under every SVG seam line."
+      },
+      {
+        "name": "button-lift-slab",
+        "value": "0 10px 22px -12px rgba(23,36,51,.45), 0 3px 8px rgba(23,36,51,.18)",
+        "purpose": "Primary button on the pale slab."
+      },
+      {
+        "name": "dock",
+        "value": "0 -8px 24px rgba(6,12,20,.35); backdrop-filter: blur(10px)",
+        "purpose": "Phone call dock, cast upward."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Button rise/press (0.25s) and dock slide (0.4s)."
+      },
+      {
+        "name": "string-points",
+        "value": "44",
+        "purpose": "Nodes per chalk string."
+      },
+      {
+        "name": "string-stiffness",
+        "value": "0.42",
+        "purpose": "Wave speed."
+      },
+      {
+        "name": "string-damping",
+        "value": "0.9955 per substep, 4 substeps",
+        "purpose": "Ring-out length."
+      },
+      {
+        "name": "sway",
+        "value": "3.2px amplitude (x0.75-1.10), tempo 1.0, three layered sines, sine envelope, per-string phase",
+        "purpose": "Ambient life; never in unison."
+      },
+      {
+        "name": "grab",
+        "value": "cross the line or come within 7.5px",
+        "purpose": "Catch the nearest node."
+      },
+      {
+        "name": "snap",
+        "value": "70px stretch (x envelope, min 25%)",
+        "purpose": "Line slips and rings out."
+      },
+      {
+        "name": "pluck",
+        "value": "26px kick within 30px of a tap",
+        "purpose": "Tap response."
+      },
+      {
+        "name": "print-fade",
+        "value": "3.5s; base 42% alpha; +0.4+force/90 per snap",
+        "purpose": "Powder print where the line snapped."
+      },
+      {
+        "name": "dust",
+        "value": "70 phone / 180 desktop (x0.5 in close); push radius 90px (110 touch); burst 16-40, life 1.6-3.4s; cap 420",
+        "purpose": "Drifting chalk dust."
+      },
+      {
+        "name": "resize-debounce",
+        "value": "120ms",
+        "purpose": "Re-layout of lines from live headline/button positions."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "single still frame per surface, redrawn on resize and font load; no loop; smooth scroll off",
+        "purpose": "prefers-reduced-motion."
+      },
+      {
+        "name": "offscreen-pause",
+        "value": "IntersectionObserver, 80px rootMargin; loop stops when no surface is visible",
+        "purpose": "Battery and CPU."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width 379px"
+      },
+      {
+        "name": "desk",
+        "value": "min-width 760px"
+      },
+      {
+        "name": "wide",
+        "value": "min-width 1080px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Call Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action: a tel: call, number in the sub-line. Shown on slab, where its lift shadow reads.",
+      "html": "<div class=\"ds-slab\"><a class=\"ds-btn ds-btn-primary\" href=\"tel:+19737897425\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z\"/></svg><span>Call for a free estimate<small>973-789-7425</small></span></a></div>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-btn{display:flex;align-items:center;justify-content:center;gap:12px;min-height:64px;padding:10px 22px;border:2px solid var(--chalk);border-radius:var(--r);font:900 17px/1.15 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;text-align:center;transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease}.ds-btn small{display:block;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:none;font-variant-numeric:tabular-nums;opacity:.85}.ds-btn:hover{transform:translateY(-2px)}.ds-btn:active{transform:translateY(2px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--chalk);outline-offset:3px}.ds-slab{background:var(--slab);padding:24px}.ds-btn-primary{background:var(--chalk);color:var(--chalk-ink);box-shadow:0 10px 22px -12px rgba(23,36,51,.45),0 3px 8px rgba(23,36,51,.18)}.ds-slab .ds-btn:focus-visible{outline-color:var(--blue-chalk)}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary in-page jump on navy; same outline and height as the primary.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-btn ds-btn-alt\" href=\"#services\"><span>What I do<small>Remodels to roofing</small></span><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M12 4v15m0 0-6-6m6 6 6-6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-btn{display:flex;align-items:center;justify-content:center;gap:12px;min-height:64px;padding:10px 22px;border:2px solid var(--chalk);border-radius:var(--r);font:900 17px/1.15 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;text-align:center;transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease}.ds-btn small{display:block;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:none;font-variant-numeric:tabular-nums;opacity:.85}.ds-btn:hover{transform:translateY(-2px)}.ds-btn:active{transform:translateY(2px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--chalk);outline-offset:3px}.ds-ground{background:var(--ground);padding:24px}.ds-btn-alt{background:transparent;color:var(--white)}.ds-btn-alt:hover{background:rgba(245,197,24,.08)}"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Two-line type wordmark and the phone number; not sticky.",
+      "html": "<header class=\"ds-bar\"><a class=\"ds-mark\" href=\"#top\"><b>ENRIQUE VALLE</b><span>CONSTRUCTION</span></a><a class=\"ds-call\" href=\"tel:+19737897425\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z\"/></svg>973-789-7425</a></header>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;background:var(--ground);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-mark{display:flex;flex-direction:column;justify-content:center;min-height:44px;line-height:1;text-decoration:none;color:inherit}.ds-mark b{font-weight:900;font-size:19px;letter-spacing:.01em}.ds-mark span{font-weight:800;font-size:11.5px;letter-spacing:.31em;color:var(--chalk);margin-top:4px}.ds-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:800;font-size:15px;text-decoration:none;color:inherit;font-variant-numeric:tabular-nums}.ds-call svg{color:var(--chalk)}.ds-mark:focus-visible,.ds-call:focus-visible{outline:3px solid var(--chalk);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Call Dock",
+      "kind": "custom",
+      "refersTo": "dock-button",
+      "description": "Phone-only fixed call bar; slides in after the hero buttons leave and out at the closing button.",
+      "html": "<div class=\"ds-dock\"><a class=\"ds-btn ds-btn-primary\" href=\"tel:+19737897425\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z\"/></svg><span>Call for a free estimate<small>973-789-7425</small></span></a></div>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-btn{display:flex;align-items:center;justify-content:center;gap:12px;min-height:64px;padding:10px 22px;border:2px solid var(--chalk);border-radius:var(--r);font:900 17px/1.15 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;text-align:center;transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease}.ds-btn small{display:block;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:none;font-variant-numeric:tabular-nums;opacity:.85}.ds-btn:hover{transform:translateY(-2px)}.ds-btn:active{transform:translateY(2px) scale(.99)}.ds-btn:focus-visible{outline:3px solid var(--chalk);outline-offset:3px}.ds-dock{padding:10px 14px;background:rgba(19,32,48,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -8px 24px rgba(6,12,20,.35)}.ds-dock .ds-btn{min-height:56px}.ds-btn-primary{background:var(--chalk);color:var(--chalk-ink)}"
+    },
+    {
+      "name": "Dimension Line",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Surveyor's dimension: figure, yellow rule with slash ticks and a knocked-out label, figure.",
+      "html": "<div class=\"ds-ground\"><div class=\"ds-dim\" role=\"img\" aria-label=\"From 1981 to today: 45 years in the trades\"><span>1981</span><span class=\"ds-rule\"><i></i><span class=\"ds-lbl\">45+ years</span><i></i></span><span>TODAY</span></div></div>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-ground{background:var(--ground);color:var(--white);padding:24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-dim{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;font-weight:900;font-size:clamp(22px,5.6vw,40px);letter-spacing:-.01em;font-variant-numeric:tabular-nums}.ds-rule{position:relative;height:28px}.ds-rule::before{content:'';position:absolute;left:0;right:0;top:50%;height:2px;background:var(--chalk);transform:translateY(-50%)}.ds-rule i{position:absolute;top:50%;width:2px;height:22px;background:var(--chalk);transform:translateY(-50%) rotate(45deg)}.ds-rule i:first-child{left:6px}.ds-rule i:last-child{right:6px}.ds-lbl{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:0 10px;background:var(--ground);white-space:nowrap;font-size:14px;letter-spacing:.02em;color:var(--chalk)}"
+    },
+    {
+      "name": "Tick List",
+      "kind": "custom",
+      "refersTo": "tick-list-item",
+      "description": "Uppercase service labels with blue chalk ticks and hairlines, on the slab.",
+      "html": "<div class=\"ds-slab\"><ul class=\"ds-ticks\"><li><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M2.5 8.6 6.2 12 13.6 3.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Masonry</li><li><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M2.5 8.6 6.2 12 13.6 3.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Decks &amp; fences</li><li><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M2.5 8.6 6.2 12 13.6 3.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Roofing</li><li><svg viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M2.5 8.6 6.2 12 13.6 3.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Windows &amp; doors</li></ul></div>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-slab{background:var(--slab);color:var(--slab-ink);padding:24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-ticks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:18px}.ds-ticks li{display:flex;align-items:center;gap:10px;min-height:46px;border-bottom:1px solid rgba(23,36,51,.14);font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.02em;line-height:1.2}.ds-ticks svg{flex:none;color:var(--blue-chalk)}"
+    },
+    {
+      "name": "Service Bay",
+      "kind": "card",
+      "refersTo": "bay",
+      "description": "Open service block on the slab: blue chalk rule, uppercase title, muted body with bolded nouns. No box.",
+      "html": "<div class=\"ds-slab\"><div class=\"ds-bay\"><h3>Interior remodeling</h3><p><b>Kitchens, bathrooms, basements</b> and full room renovations.</p></div></div>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-slab{background:var(--slab);color:var(--slab-ink);padding:24px;font:400 17px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-bay{padding:24px 0 26px;border-top:2px solid rgba(44,100,168,.55)}.ds-bay h3{margin:0 0 8px;font-weight:900;font-size:22px;text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}.ds-bay p{margin:0;color:var(--slab-muted)}.ds-bay b{color:var(--slab-ink);font-weight:700}"
+    },
+    {
+      "name": "Step",
+      "kind": "custom",
+      "refersTo": "step",
+      "description": "Numbered step: yellow chalk numeral, uppercase title, muted body, yellow hairline above.",
+      "html": "<div class=\"ds-raised\"><ol class=\"ds-steps\"><li><h3>Call me</h3><p>Any time, at 973-789-7425.</p></li><li><h3>I stop by</h3><p>We set a time, I look at the job in person, and you get a free estimate.</p></li></ol></div>",
+      "css": ":host{--ground:#172433;--ground-2:#1d2e41;--ground-deep:#132030;--chalk:#f5c518;--chalk-ink:#172433;--white:#eef2f6;--muted:#aebdcd;--slab:#ece7dc;--slab-ink:#172433;--slab-muted:#46566b;--blue-chalk:#2c64a8;--r:14px}.ds-raised{background:var(--ground-2);color:var(--white);padding:24px;font:400 17px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}.ds-steps{list-style:none;margin:0;padding:0;counter-reset:s}.ds-steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:22px 0;border-top:1px solid rgba(245,197,24,.28)}.ds-steps li::before{counter-increment:s;content:counter(s);grid-row:span 2;font-weight:900;font-size:44px;line-height:1;color:var(--chalk)}.ds-steps h3{margin:2px 0 0;font-weight:900;font-size:21px;text-transform:uppercase;line-height:1.15}.ds-steps p{margin:0;color:var(--muted)}"
+    },
+    {
+      "name": "Chalk Seam",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Section boundary as a chalk string; the next section's color fills below the line. Static snapshot here; live it runs the shared string physics.",
+      "html": "<svg class=\"ds-seam\" viewBox=\"0 0 390 56\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><rect width=\"390\" height=\"56\" fill=\"#172433\"/><path d=\"M-6 34.7 L396 21.3 L396 58 L-6 58Z\" fill=\"#ece7dc\"/><path d=\"M-4.5 37.7 L397.5 24.3\" fill=\"none\" stroke=\"rgba(6,12,20,.28)\" stroke-width=\"3\" style=\"filter:blur(1.5px)\"/><path d=\"M-6 34.7 L396 21.3\" fill=\"none\" stroke=\"#d6a800\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></svg>",
+      "css": ".ds-seam{display:block;width:100%;height:56px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Snapped Layout",
+    "overview": "**Creative North Star: \"The Snapped Layout\"**\n\nThe page is a job site being laid out, not a contractor template. A slate-navy ground stands in for the slab before the pour; yellow chalk lines are snapped across it to frame the work. The lines are real objects: taut 2px strings with a soft cast shadow that sway constantly, catch on a finger or cursor, stretch, slip and twang, leaving a powder print and a puff of dust where they snapped. Everything else is heavy uppercase type and layout marks (dimension lines with slash ticks, tick lists, rules between bays) in the same two chalks.\n\nDensity is low and the voice is loud: one idea per section, huge display type, one action (call). The palette is the owner's flyer (black, safety yellow, white) translated onto a ground that is never black. A single pale slab section with blue chalk breaks the navy once, the way a sheet of plywood breaks a slab.\n\nConfirmed rejections from the direction contract: no stock-photo hero, no icon-card grid, no fake reviews.",
+    "keyCharacteristics": [
+      "Slate-navy ground, never black; yellow chalk is the one trade color.",
+      "Taut chalk lines (canvas and SVG) as the only decoration and every section boundary.",
+      "Heavy uppercase system type, tight negative tracking at display sizes.",
+      "Layout marks as components: dimension line, tick list, ruled bays, numbered steps.",
+      "One action everywhere: a 64px yellow call button with the number shown.",
+      "Phone first; desktop is the phone layout given columns."
+    ],
+    "rules": [
+      {
+        "name": "The Never-Black Rule",
+        "body": "The ground is slate navy in three steps (ground, raised, deep). The flyer's black survives only as the shadow tint `rgba(6,12,20,…)`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Chalk Per Surface Rule",
+        "body": "Yellow chalk marks navy; blue chalk marks the slab. Chalk marks (emphasis words, ticks, rules, focus rings) never use the other surface's chalk. Two things cross: the seam line (seam-chalk) at the boundary, and the yellow call button, which is the same object on every surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shout-Then-Explain Rule",
+        "body": "Anything uppercase is 800-900; anything 400 is sentence case. No middle weights for headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Number Rule",
+        "body": "Every phone number and year is set with tabular figures (`font-variant-numeric: tabular-nums`).",
+        "section": "typography"
+      },
+      {
+        "name": "The Two-Line Lockup Rule",
+        "body": "The wordmark is set in type as the flyer's lockup: ENRIQUE VALLE (900) over CONSTRUCTION (800, widely tracked at 0.31em, yellow chalk). The closing name repeats it at display size with the sub-line at 0.42em and 0.2em tracking. Never redraw it as a logo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Phone-First Rule",
+        "body": "The first phone viewport must hold the wordmark and number, the gable, the headline, the pitch, and the full-width call button. Desktop adds columns; it never adds content the phone lacks (the 1080px hero list is the slab list relocated, not new).",
+        "section": "layout"
+      },
+      {
+        "name": "The Thumb Rule",
+        "body": "Every tap target is at least 44px tall: buttons 64px (dock 56px), bar links 44px, tick rows 46px, inline links padded by 11px vertically with matching negative margin.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lifted-Line Rule",
+        "body": "Only things that are physically raised cast shadows: the strings and the floating dock. Text, sections and lists never do.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Living Line Rule",
+        "body": "Every snapped chalk line (a string spanning a surface or a section boundary) is the same string: it sways, it can be grabbed, and it snaps with dust and a print. Drawn layout marks (dimension rules, hairlines, bay rules, button outlines) are a different material and stay still.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do keep the ground slate navy (slate-ground, slate-raised, slate-deep) and step between them to separate sections.",
+      "Do mark every section boundary with a chalk seam whose fill follows the line.",
+      "Do make every action a `tel:` call on a 64px yellow chalk button with the number in its sub-line.",
+      "Do set announcing type at 900 uppercase with -0.02em tracking at display sizes, and running text at 400, 17px, 1.55.",
+      "Do use tabular figures for every number and year.",
+      "Do build new content from layout marks: dimension lines, tick lists, ruled bays, numbered steps.",
+      "Do give new chalk lines the shared physics, a cast shadow, a powder print, the reduced-motion still frame and the off-screen pause.",
+      "Do keep every tap target at least 44px tall and keep the phone's first viewport holding the call button."
+    ],
+    "donts": [
+      "Don't use black as a ground; it exists only as shadow tint.",
+      "Don't use a stock-photo hero, an icon-card grid, or fake reviews.",
+      "Don't use yellow chalk marks on the pale slab or blue chalk on navy; only the seam line and the yellow call button cross surfaces.",
+      "Don't wrap content in cards, boxes or rounded panels; only buttons are rounded.",
+      "Don't add a snapped chalk line (gable, ground line, seam) that does not run the shared string physics.",
+      "Don't show two call buttons at once on phones (the dock hides at the hero and the close).",
+      "Don't invent a logo or name variant; the wordmark is type only."
+    ]
+  }
+}
