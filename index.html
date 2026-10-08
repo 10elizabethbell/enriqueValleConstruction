@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enrique Valle Construction — Newark, NJ · Free estimates</title>
+<meta name="description" content="Home remodeling, kitchens and bathrooms, roofing, masonry, concrete and more in Newark, NJ. 45 years in the trades. Every job guaranteed. Call 973-789-7425 for a free estimate.">
+<meta name="theme-color" content="#172433">
+<meta property="og:title" content="Enrique Valle Construction — every job guaranteed">
+<meta property="og:description" content="45 years in the trades. Remodeling, roofing, masonry, concrete and more. Newark, NJ. Free estimates: 973-789-7425.">
+<style>
+/* ===== Tokens ===== */
+:root{
+  --ground:#172433;        /* slate navy: the layout surface (never black) */
+  --ground-2:#1d2e41;
+  --ground-deep:#132030;
+  --chalk:#f5c518;         /* yellow chalk, from the flyer's safety yellow */
+  --chalk-ink:#172433;     /* text on yellow */
+  --white:#eef2f6;
+  --muted:#aebdcd;         /* secondary text on navy */
+  --slab:#ece7dc;          /* pale slab / plywood section */
+  --slab-ink:#172433;
+  --slab-muted:#46566b;
+  --blue-chalk:#2c64a8;    /* blue chalk on the pale slab */
+  --ochre:#b98a00;         /* yellow chalk read on the pale slab */
+  --r:14px;
+  --pad:20px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scrollbar-color:var(--chalk) var(--ground-deep)}
+body{margin:0;background:var(--ground);color:var(--white);font:400 17px/1.55 var(--font);overflow-x:hidden}
+::selection{background:var(--chalk);color:var(--chalk-ink)}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--chalk);outline-offset:3px;border-radius:6px}
+.slab :focus-visible{outline-color:var(--blue-chalk)}
+img,svg,canvas{display:block}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+.disp{font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.98;text-wrap:balance;margin:0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== Top bar ===== */
+.bar{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--pad);max-width:1180px;margin:0 auto}
+.mark{display:flex;flex-direction:column;justify-content:center;min-height:44px;line-height:1;text-decoration:none}
+.mark b{font-weight:900;font-size:19px;letter-spacing:.01em}
+.mark span{font-weight:800;font-size:11.5px;letter-spacing:.31em;color:var(--chalk);margin-top:4px}
+.bar-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;font-weight:800;font-size:15px;text-decoration:none;font-variant-numeric:tabular-nums}
+.bar-call svg{width:18px;height:18px;color:var(--chalk)}
+
+/* ===== Hero ===== */
+.hero{position:relative;overflow:hidden;padding:96px 0 64px;margin-top:-68px}
+.hero canvas,.hero .static{position:absolute;inset:0;width:100%;height:100%}
+.hero .static{pointer-events:none}
+.hero.live .static{display:none}
+.hero-in{position:relative;z-index:2;display:grid;gap:22px}
+.hero h1{font-size:clamp(40px,12.4vw,104px);padding-top:36px}
+.hero h1 em{font-style:normal;color:var(--chalk)}
+.pitch{margin:0;font-size:clamp(17px,1.7vw,20px);color:var(--muted);max-width:34em}
+.pitch strong{color:var(--white);font-weight:700}
+.actions{display:grid;gap:12px;margin-top:4px}
+
+/* Buttons: one component, two fills, same outline and height */
+.btn{display:flex;align-items:center;justify-content:center;gap:12px;min-height:64px;padding:10px 22px;border:2px solid var(--chalk);border-radius:var(--r);font-weight:900;font-size:17px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;text-align:center;line-height:1.15;transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease}
+.btn svg{width:22px;height:22px;flex:none}
+.btn small{display:block;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:none;font-variant-numeric:tabular-nums;opacity:.85}
+.btn-main{background:var(--chalk);color:var(--chalk-ink);box-shadow:0 10px 22px -10px rgba(6,12,20,.6),0 3px 8px rgba(6,12,20,.3)}
+.btn-alt{background:transparent;color:var(--white)}
+.btn:active{transform:translateY(2px) scale(.99)}
+@media (hover:hover){.btn:hover{transform:translateY(-2px)}.btn-main:hover{box-shadow:0 16px 28px -12px rgba(6,12,20,.65),0 4px 10px rgba(6,12,20,.3)}.btn-alt:hover{background:rgba(245,197,24,.08)}}
+
+/* Desktop-only service list in the hero (mirrors the flyer's right column) */
+.hero-list{display:none}
+
+/* ===== Chalk-line dividers ===== */
+.seam{display:block;width:100%;height:56px;margin:-1px 0;touch-action:pan-y;position:relative;z-index:1}
+.seam path.line{fill:none;stroke-width:2.2;stroke-linecap:round}
+.seam path.shadow{fill:none;stroke:rgba(6,12,20,.28);stroke-width:3;filter:blur(1.5px)}
+
+/* ===== Since 1981 / guarantee ===== */
+.since{background:var(--ground);padding:40px 0 64px}
+.dim{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;font-weight:900;font-size:clamp(22px,5.6vw,40px);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.dim .rule{position:relative;height:28px}
+.dim .rule::before{content:"";position:absolute;left:0;right:0;top:50%;height:2px;background:var(--chalk);transform:translateY(-50%)}
+.dim .rule i{position:absolute;top:50%;width:2px;height:22px;background:var(--chalk);transform:translateY(-50%) rotate(45deg)}
+.dim .rule i:first-child{left:6px}.dim .rule i:last-child{right:6px}
+.dim .lbl{position:absolute;left:50%;top:-30px;transform:translateX(-50%);white-space:nowrap;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--chalk)}
+.since blockquote{margin:44px 0 0;max-width:22em}
+.since blockquote p{margin:0;font-weight:800;font-size:clamp(26px,6.6vw,52px);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.since blockquote p mark{background:none;color:var(--chalk)}
+.since figcaption,.since .note{margin-top:16px;color:var(--muted);font-size:16px}
+.since .note{max-width:36em;margin-top:28px}
+
+/* ===== Services (pale slab) ===== */
+.slab{background:var(--slab);color:var(--slab-ink)}
+.services{padding:40px 0 72px}
+.services h2{font-size:clamp(34px,9vw,76px);max-width:11em}
+.services h2 em{font-style:normal;color:var(--blue-chalk)}
+.bays{display:grid;gap:0;margin-top:34px}
+.bay{padding:24px 0 26px;border-top:2px solid rgba(44,100,168,.55)}
+.bay h3{margin:0 0 8px;font-weight:900;font-size:22px;text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}
+.bay p{margin:0;color:var(--slab-muted);max-width:34em}
+.bay p b{color:var(--slab-ink);font-weight:700}
+.also{margin-top:30px}
+.also h3{margin:0 0 6px;font-weight:900;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-chalk)}
+.tick-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+.tick-list li{display:flex;align-items:center;gap:10px;min-height:46px;border-bottom:1px solid rgba(23,36,51,.14);font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.02em;line-height:1.2}
+.tick-list svg{width:16px;height:16px;flex:none;color:var(--blue-chalk)}
+.slab-cta{margin-top:34px}
+.slab .btn-main{box-shadow:0 10px 22px -12px rgba(23,36,51,.45),0 3px 8px rgba(23,36,51,.18)}
+
+/* ===== How it works ===== */
+.how{background:var(--ground-2);padding:40px 0 72px}
+.how h2{font-size:clamp(34px,9vw,76px)}
+.steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:22px 0;border-top:1px solid rgba(245,197,24,.28)}
+.steps li::before{counter-increment:s;content:counter(s);grid-row:span 2;font-weight:900;font-size:44px;line-height:1;color:var(--chalk)}
+.steps h3{margin:2px 0 0;font-weight:900;font-size:21px;text-transform:uppercase;line-height:1.15}
+.steps p{margin:0;color:var(--muted)}
+.steps a,footer a{display:inline-block;padding:11px 0;margin:-11px 0}
+.steps a{color:var(--white);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* ===== Close ===== */
+.close{position:relative;overflow:hidden;background:var(--ground-deep);padding:120px 0 72px;text-align:left}
+.close canvas{position:absolute;inset:0;width:100%;height:100%}
+.close-in{position:relative;z-index:2}
+.close h2{font-size:clamp(38px,11vw,104px)}
+.close h2 span{display:block;color:var(--chalk);font-size:.42em;letter-spacing:.2em;margin-top:.35em}
+.close .pitch{margin-top:20px}
+.close .actions{margin-top:28px;max-width:520px}
+
+/* ===== Footer ===== */
+footer{background:var(--ground-deep);border-top:1px solid rgba(174,189,205,.16);padding:28px 0 calc(110px + env(safe-area-inset-bottom));color:var(--muted);font-size:15px}
+footer .wrap{display:grid;gap:6px}
+footer b{color:var(--white)}
+footer a{font-weight:700;color:var(--white);font-variant-numeric:tabular-nums}
+.demo{margin-top:10px;font-size:14px}
+
+/* ===== Sticky call bar (phones) ===== */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(19,32,48,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 -8px 24px rgba(6,12,20,.35);transform:translateY(110%);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.dock.on{transform:none}
+.dock .btn{min-height:56px}
+
+/* ===== Desktop ===== */
+@media (min-width:760px){
+  :root{--pad:40px}
+  .bar{padding-top:22px}
+  .mark b{font-size:22px}
+  .bar-call{font-size:17px}
+  .hero{padding:120px 0 96px;margin-top:-84px}
+  .actions{grid-template-columns:auto auto;justify-content:start}
+  .actions .btn{padding:10px 30px}
+  .since{padding:56px 0 96px}
+  .since-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+  .since blockquote{margin-top:0}
+  .bays{grid-template-columns:repeat(3,1fr);column-gap:36px}
+  .tick-list{grid-template-columns:repeat(5,1fr);column-gap:24px}
+  .services,.how{padding:56px 0 104px}
+  .steps{grid-template-columns:repeat(3,1fr);column-gap:36px}
+  .close{padding:170px 0 110px}
+  footer{padding-bottom:36px}
+  footer .wrap{grid-template-columns:1fr auto;align-items:end}
+  .dock{display:none}
+}
+@media (min-width:1080px){
+  .hero{min-height:min(86vh,820px);display:flex;flex-direction:column;justify-content:center}
+  .hero-in{width:100%}
+  .hero-in{grid-template-columns:1.3fr .7fr;column-gap:48px;align-items:end}
+  .hero-main{display:grid;gap:22px}
+  .hero-list{display:block;align-self:end;padding-bottom:6px}
+  .hero-list ul{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--chalk)}
+  .hero-list li{display:flex;align-items:center;gap:12px;min-height:40px;border-bottom:1px solid rgba(245,197,24,.22);font-weight:800;font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+  .hero-list svg{width:16px;height:16px;color:var(--chalk)}
+  .services .also{display:none}
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: A job-site layout, not a contractor template: taut yellow chalk lines snapped across a slate surface frame the page; the guarantee and 45 years carry the sell. Refuses stock-photo hero, icon-card grid, fake reviews.
+OWN-WORLD: Slate-navy layout surface (#172433), yellow chalk (#f5c518, his flyer's yellow), a pale slab section with blue chalk. Taut 2px lines with soft cast shadows, powder prints where lines were snapped, drifting chalk dust. Heavy uppercase system type; dimension lines with slash ticks.
+STORY: Visitor sees who (Enrique Valle Construction), what (the whole house, inside and out), where (Newark, NJ), why trust (every job guaranteed, in the trades since 1981), and calls for a free estimate.
+FIRST VIEWPORT (phone): wordmark + number in the bar; chalk-line roof gable spanning the width; "Every job guaranteed." headline under its peak; one-line pitch; full-width Call for a free estimate (number shown) and What I do; a ground chalk line under the buttons. Lines sway and can be grabbed, plucked and snapped by finger or mouse.
+FORM: Snapped chalk line and layout marks, #3 of my seven grounded worlds (seed 58b0a253). Runner-up: blueprint and timber framing.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+  <symbol id="i-tick" viewBox="0 0 16 16"><path d="M2.5 8.6 6.2 12 13.6 3.6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v15m0 0-6-6m6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="bar">
+  <a class="mark" href="#top" aria-label="Enrique Valle Construction, top of page"><b>ENRIQUE VALLE</b><span>CONSTRUCTION</span></a>
+  <a class="bar-call" href="tel:+19737897425"><svg aria-hidden="true"><use href="#i-phone"/></svg>973-789-7425</a>
+</header>
+
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <!-- Static fallback of the chalk gable until the canvas starts -->
+  <svg class="static" viewBox="0 0 390 700" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><g stroke="#f5c518" stroke-width="2" opacity=".8"><path d="M-30 190 195 78 420 190"/></g></svg>
+  <canvas id="hero-c" aria-hidden="true"></canvas>
+  <div class="wrap hero-in">
+    <div class="hero-main">
+      <h1 class="disp" id="h1">Every job <em>guaranteed.</em></h1>
+      <p class="pitch"><strong>45 years in the trades.</strong> Kitchens, baths, roofs, concrete and the rest of the house, inside and out. Based in Newark, NJ.</p>
+      <div class="actions" id="hero-actions">
+        <a class="btn btn-main" href="tel:+19737897425"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Call for a free estimate<small>973-789-7425</small></span></a>
+        <a class="btn btn-alt" href="#services"><span>What I do<small>Remodels to roofing</small></span><svg aria-hidden="true"><use href="#i-down"/></svg></a>
+      </div>
+    </div>
+    <div class="hero-list" aria-hidden="true">
+      <ul>
+        <li><svg><use href="#i-tick"/></svg>Home remodeling</li>
+        <li><svg><use href="#i-tick"/></svg>Kitchens &amp; bathrooms</li>
+        <li><svg><use href="#i-tick"/></svg>Masonry</li>
+        <li><svg><use href="#i-tick"/></svg>Decks &amp; fences</li>
+        <li><svg><use href="#i-tick"/></svg>Roofing</li>
+        <li><svg><use href="#i-tick"/></svg>Windows &amp; doors</li>
+        <li><svg><use href="#i-tick"/></svg>Flooring</li>
+        <li><svg><use href="#i-tick"/></svg>Painting</li>
+        <li><svg><use href="#i-tick"/></svg>Siding</li>
+        <li><svg><use href="#i-tick"/></svg>Concrete work &amp; much more</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="since" aria-labelledby="since-h">
+  <div class="wrap since-grid">
+    <div>
+      <h2 class="sr" id="since-h">In the trades since 1981</h2>
+      <div class="dim" role="img" aria-label="From 1981 to today: 45 years in the trades">
+        <span>1981</span>
+        <span class="rule"><i></i><span class="lbl">45+ years in the trades</span><i></i></span>
+        <span>TODAY</span>
+      </div>
+      <p class="note">Over 45 years of hands-on work, from foundations and concrete to finished kitchens.</p>
+    </div>
+    <figure style="margin:0">
+      <blockquote><p>“Because I take real pride in my work, <mark>every job I take on comes guaranteed.</mark>”</p></blockquote>
+      <figcaption>Enrique Valle Construction</figcaption>
+    </figure>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#172433" data-to="#ece7dc" data-line="#d6a800" aria-hidden="true"></svg>
+
+<section class="slab services" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <h2 class="disp" id="svc-h">The whole house, <em>inside and out.</em></h2>
+    <div class="bays">
+      <div class="bay">
+        <h3>Interior remodeling</h3>
+        <p><b>Kitchens, bathrooms, basements</b> and full room renovations.</p>
+      </div>
+      <div class="bay">
+        <h3>Electrical &amp; plumbing</h3>
+        <p><b>Upgrades, repairs</b> and complete fixture installation.</p>
+      </div>
+      <div class="bay">
+        <h3>Exterior &amp; heavy repairs</h3>
+        <p><b>Concrete pavement, driveways, roofing repairs</b> and full balcony repairs or replacements.</p>
+      </div>
+    </div>
+    <div class="also">
+      <h3>Also on the list</h3>
+      <ul class="tick-list">
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Masonry</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Decks &amp; fences</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Roofing</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Windows &amp; doors</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Flooring</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Painting</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Siding</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Concrete work</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>Home remodeling</li>
+        <li><svg aria-hidden="true"><use href="#i-tick"/></svg>And much more</li>
+      </ul>
+    </div>
+    <div class="slab-cta"><a class="btn btn-main" href="tel:+19737897425"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Not on the list? Ask.<small>973-789-7425</small></span></a></div>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#ece7dc" data-to="#1d2e41" data-line="#d6a800" aria-hidden="true"></svg>
+
+<section class="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <h2 class="disp" id="how-h">How it works</h2>
+    <ol class="steps">
+      <li><h3>Call me</h3><p>Any time, at <a href="tel:+19737897425">973-789-7425</a>.</p></li>
+      <li><h3>I stop by</h3><p>We set a time, I look at the job in person, and you get a free estimate.</p></li>
+      <li><h3>Done right, guaranteed</h3><p>Every job I take on comes guaranteed.</p></li>
+    </ol>
+  </div>
+</section>
+
+<svg class="seam" data-seam data-from="#1d2e41" data-to="#132030" data-line="#f5c518" aria-hidden="true"></svg>
+
+<section class="close" id="close" aria-labelledby="close-h">
+  <canvas id="close-c" aria-hidden="true"></canvas>
+  <div class="wrap close-in">
+    <h2 class="disp" id="close-h">Enrique Valle<span>Construction</span></h2>
+    <p class="pitch"><strong>Free estimates. Every job guaranteed.</strong> Located in Newark, NJ. Not sure you’re in range? Call and ask.</p>
+    <div class="actions" id="close-actions">
+      <a class="btn btn-main" href="tel:+19737897425"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Call for a free estimate<small>973-789-7425</small></span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>ENRIQUE VALLE CONSTRUCTION</b><br>Newark, NJ · <a href="tel:+19737897425">973-789-7425</a></div>
+    <div class="demo">Demo one-pager — free sample.</div>
+  </div>
+</footer>
+
+<div class="dock" id="dock" aria-hidden="true">
+  <a class="btn btn-main" href="tel:+19737897425" tabindex="-1"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>Call for a free estimate<small>973-789-7425</small></span></a>
+</div>
+
+<script>
+/* ============================================================
+   Chalk lines: shared physics, one animation loop.
+   Tunables are named at the top of each block.
+   ============================================================ */
+(function(){
+  'use strict';
+  var REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Tunables ---- */
+  var POINTS = 44;            // nodes per string
+  var STIFF = 0.42;           // wave speed (higher = faster twang)
+  var DAMP = 0.9955;          // per substep (lower = dies faster)
+  var SUBSTEPS = 4;
+  var SWAY_PX = 3.2;          // ambient sway amplitude
+  var SWAY_SPEED = 1.0;       // ambient sway tempo (Ellie likes lively)
+  var GRAB_PX = 30;           // how close a pointer must cross to catch the line
+  var STRETCH_PX = 70;        // pull past this and the line slips and snaps
+  var TAP_KICK = 26;          // tap near a line: pluck size
+  var PRINT_FADE = 3.5;       // seconds for a fresh snap print to fade back
+  var CHALK = '245,197,24';
+
+  /* ---- Pointer (client coords) shared by every surface ---- */
+  var P = {x:-1e4,y:-1e4,px:-1e4,py:-1e4,vx:0,vy:0,active:false,touch:false,tap:null};
+  function move(x,y,touch){
+    if(!P.active){P.px=x;P.py=y}
+    P.x=x;P.y=y;P.active=true;P.touch=touch;wake();
+  }
+  addEventListener('pointermove',function(e){if(e.pointerType!=='touch')move(e.clientX,e.clientY,false)},{passive:true});
+  addEventListener('pointerdown',function(e){if(e.pointerType!=='touch'){move(e.clientX,e.clientY,false);P.tap={x:e.clientX,y:e.clientY}}},{passive:true});
+  document.addEventListener('pointerleave',function(){P.active=false},{passive:true});
+  addEventListener('blur',function(){P.active=false});
+  addEventListener('touchstart',function(e){var t=e.touches[0];if(!t)return;P.active=false;move(t.clientX,t.clientY,true);P.tap={x:t.clientX,y:t.clientY}},{passive:true});
+  addEventListener('touchmove',function(e){var t=e.touches[0];if(t)move(t.clientX,t.clientY,true)},{passive:true});
+  addEventListener('touchend',function(){P.active=false},{passive:true});
+  addEventListener('touchcancel',function(){P.active=false},{passive:true});
+
+  /* ---- A chalk string between two points (local px) ---- */
+  function Str(ax,ay,bx,by,phase){
+    this.y=new Float32Array(POINTS);this.v=new Float32Array(POINTS);
+    this.phase=phase||0;this.grab=-1;this.print=0;this.set(ax,ay,bx,by);
+  }
+  Str.prototype.set=function(ax,ay,bx,by){
+    this.ax=ax;this.ay=ay;this.bx=bx;this.by=by;
+    var dx=bx-ax,dy=by-ay;this.len=Math.hypot(dx,dy)||1;
+    this.ux=dx/this.len;this.uy=dy/this.len;this.nx=-this.uy;this.ny=this.ux;
+  };
+  Str.prototype.sway=function(i,t){ // ambient, fluid, never repeats exactly
+    var s=i/(POINTS-1),env=Math.sin(Math.PI*s),k=t*SWAY_SPEED+this.phase;
+    var amp=SWAY_PX*(0.75+0.35*Math.sin(k*0.23));
+    return env*amp*(Math.sin(k*1.9)+0.45*Math.sin(k*3.7+1.3)+0.3*Math.sin(s*7-k*2.6));
+  };
+  Str.prototype.local=function(px,py){ // -> [along 0..1, perpendicular offset]
+    var rx=px-this.ax,ry=py-this.ay;
+    return [(rx*this.ux+ry*this.uy)/this.len,rx*this.nx+ry*this.ny];
+  };
+  Str.prototype.dispAt=function(s,t){
+    var f=Math.max(0,Math.min(POINTS-1,s*(POINTS-1))),i=Math.round(f);
+    return this.y[i]+this.sway(i,t);
+  };
+  // Returns a snap event {x,y,force} in local px, or null
+  Str.prototype.interact=function(lx,ly,lpx,lpy,active,tap,t){
+    var ev=null,a=this.local(lx,ly),b=this.local(lpx,lpy);
+    if(this.grab>=0){
+      var i=this.grab,s=i/(POINTS-1),env=Math.sin(Math.PI*s);
+      if(!active||a[0]<0.02||a[0]>0.98||Math.abs(a[1])>STRETCH_PX*Math.max(env,.25)+2){
+        ev=this.snapAt(i,Math.abs(this.y[i]));this.grab=-1;
+      }else{
+        var ni=Math.round(Math.max(1,Math.min(POINTS-2,a[0]*(POINTS-1))));
+        this.grab=ni;this.y[ni]=a[1]-this.sway(ni,t);this.v[ni]=0;
+      }
+    }else if(active&&a[0]>0.03&&a[0]<0.97){
+      var da=a[1]-this.dispAt(a[0],t),db=b[1]-this.dispAt(b[0],t);
+      var moved=Math.hypot(lx-lpx,ly-lpy);
+      if(moved>0.5&&(da*db<0||(Math.abs(da)<GRAB_PX*0.25&&moved>2))&&Math.abs(db)<GRAB_PX*3){
+        this.grab=Math.round(Math.max(1,Math.min(POINTS-2,a[0]*(POINTS-1))));
+      }
+    }
+    if(tap){
+      var c=this.local(tap.x,tap.y);
+      if(c[0]>0.03&&c[0]<0.97&&Math.abs(c[1]-this.dispAt(c[0],t))<GRAB_PX){
+        var j=Math.round(c[0]*(POINTS-1));this.y[j]+=(c[1]>0?-1:1)*TAP_KICK*Math.sin(Math.PI*c[0])+ (c[1]>0?-6:6);
+        ev=this.snapAt(j,TAP_KICK);
+      }
+    }
+    return ev;
+  };
+  Str.prototype.snapAt=function(i,force){
+    this.print=Math.min(1,this.print+0.4+force/90);
+    var s=i/(POINTS-1);
+    return {x:this.ax+this.ux*this.len*s,y:this.ay+this.uy*this.len*s,force:force,nx:this.nx,ny:this.ny};
+  };
+  Str.prototype.step=function(dt){
+    var y=this.y,v=this.v,n=POINTS-1,g=this.grab,k;
+    for(var sub=0;sub<SUBSTEPS;sub++){
+      for(k=1;k<n;k++){if(k!==g)v[k]=(v[k]+STIFF*(y[k-1]+y[k+1]-2*y[k]))*DAMP}
+      for(k=1;k<n;k++){if(k!==g)y[k]+=v[k]}
+    }
+    this.print=Math.max(0,this.print-dt/PRINT_FADE);
+  };
+  Str.prototype.pt=function(i,t){
+    var s=i/(POINTS-1),d=this.y[i]+this.sway(i,t);
+    return [this.ax+this.ux*this.len*s+this.nx*d,this.ay+this.uy*this.len*s+this.ny*d];
+  };
+
+  /* ---- Canvas surface: strings + powder prints + chalk dust ---- */
+  var DUST_PHONE=70,DUST_DESK=180,BURST=16,MAX_PARTS=420;
+  var dot=document.createElement('canvas');dot.width=dot.height=16;
+  (function(){var g=dot.getContext('2d'),r=g.createRadialGradient(8,8,0,8,8,8);
+    r.addColorStop(0,'rgba(255,236,170,1)');r.addColorStop(.45,'rgba('+CHALK+',.55)');r.addColorStop(1,'rgba('+CHALK+',0)');
+    g.fillStyle=r;g.fillRect(0,0,16,16)})();
+
+  function Surface(sec,canvas,layout){
+    this.sec=sec;this.c=canvas;this.g=canvas.getContext('2d');this.layout=layout;
+    this.strings=[];this.parts=[];this.prints=[];this.visible=true;this.rect=null;
+  }
+  Surface.prototype.resize=function(){
+    var r=this.sec.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);
+    this.w=r.width;this.h=r.height;this.dpr=dpr;
+    this.c.width=Math.round(this.w*dpr);this.c.height=Math.round(this.h*dpr);
+    var L=this.layout(this.w,this.h,this.sec),self=this;
+    L.forEach(function(l,i){
+      if(!self.strings[i])self.strings[i]=new Str(l[0],l[1],l[2],l[3],i*2.1+0.7);
+      else self.strings[i].set(l[0],l[1],l[2],l[3]);
+    });
+    this.strings.length=L.length;
+    // pre-render a powder print per string
+    this.prints=this.strings.map(function(s){
+      var pc=document.createElement('canvas'),pad=10;
+      var minx=Math.min(s.ax,s.bx)-pad,miny=Math.min(s.ay,s.by)-pad;
+      pc.width=Math.ceil((Math.abs(s.bx-s.ax)+pad*2)*dpr);pc.height=Math.ceil((Math.abs(s.by-s.ay)+pad*2)*dpr);
+      var g=pc.getContext('2d');g.scale(dpr,dpr);g.fillStyle='rgb('+CHALK+')';
+      var n=Math.floor(s.len*1.6);
+      for(var k=0;k<n;k++){
+        var u=Math.random(),gs=(Math.random()+Math.random()+Math.random()-1.5)*2.2;
+        var x=s.ax+s.ux*s.len*u+s.nx*gs-minx,y=s.ay+s.uy*s.len*u+s.ny*gs-miny;
+        g.globalAlpha=0.08+Math.random()*0.22;g.beginPath();g.arc(x,y,0.5+Math.random()*1.1,0,6.283);g.fill();
+      }
+      return {c:pc,x:minx,y:miny};
+    });
+    // ambient dust motes
+    var want=(this.w<760?DUST_PHONE:DUST_DESK)*(this.dustScale||1);
+    this.parts=this.parts.filter(function(p){return p.burst});
+    for(var i=0;i<want;i++)this.parts.push(this.mote());
+  };
+  Surface.prototype.mote=function(){
+    return {x:Math.random()*this.w,y:Math.random()*this.h,ox:0,oy:0,vx:0,vy:0,
+      r:0.8+Math.random()*1.9,a:0.18+Math.random()*0.45,ph:Math.random()*99,burst:false};
+  };
+  Surface.prototype.burst=function(ev){
+    var n=Math.min(BURST+ev.force*0.4,40);
+    for(var i=0;i<n&&this.parts.length<MAX_PARTS;i++){
+      var sp=(0.6+Math.random()*2.4)*(0.5+ev.force/50),side=Math.random()<.5?-1:1,ang=(Math.random()-.5)*1.6;
+      this.parts.push({x:ev.x,y:ev.y,ox:0,oy:0,
+        vx:(ev.nx*side*Math.cos(ang)-ev.ny*Math.sin(ang))*sp*60,vy:(ev.ny*side*Math.cos(ang)+ev.nx*Math.sin(ang))*sp*60-20,
+        r:0.7+Math.random()*1.8,a:0.5+Math.random()*0.4,ph:Math.random()*99,burst:true,life:1.6+Math.random()*1.8});
+    }
+  };
+  Surface.prototype.frame=function(t,dt){
+    var r=this.sec.getBoundingClientRect();this.rect=r;
+    var lx=P.x-r.left,ly=P.y-r.top,lpx=P.px-r.left,lpy=P.py-r.top;
+    var tap=P.tap?{x:P.tap.x-r.left,y:P.tap.y-r.top}:null;
+    var inside=P.active&&lx>-40&&ly>-40&&lx<this.w+40&&ly<this.h+40;
+    for(var i=0;i<this.strings.length;i++){
+      var s=this.strings[i],ev=s.interact(lx,ly,lpx,lpy,inside,tap,t);
+      if(ev)this.burst(ev);
+      s.step(dt);
+    }
+    // dust
+    var pvx=P.vx,pvy=P.vy,R=P.touch?110:90;
+    for(i=this.parts.length-1;i>=0;i--){
+      var p=this.parts[i];
+      if(p.burst){
+        p.life-=dt;if(p.life<=0){this.parts.splice(i,1);continue}
+        p.vx*=0.94;p.vy=p.vy*0.94+14*dt;p.x+=p.vx*dt;p.y+=p.vy*dt;
+        p.x+=Math.sin(t*1.3+p.ph)*0.25;
+      }else{
+        // slow drift on a wandering field
+        p.x+=(Math.sin(t*0.31+p.ph+p.y*0.004)*9+4)*dt;p.y+=(Math.cos(t*0.27+p.ph*1.3+p.x*0.003)*7-3)*dt;
+        if(p.x<-10)p.x+=this.w+20;if(p.x>this.w+10)p.x-=this.w+20;if(p.y<-10)p.y+=this.h+20;if(p.y>this.h+10)p.y-=this.h+20;
+      }
+      if(inside){
+        var dx=p.x+p.ox-lx,dy=p.y+p.oy-ly,d=Math.hypot(dx,dy);
+        if(d<R&&d>0.1){var f=(1-d/R);p.vx+=0;p.ox+=0;
+          p.ovx=(p.ovx||0)+(dx/d*f*900+pvx*f*0.9)*dt;p.ovy=(p.ovy||0)+(dy/d*f*900+pvy*f*0.9)*dt;}
+      }
+      // spring offset back with a little wobble
+      p.ovx=((p.ovx||0)-p.ox*38*dt)*(1-6.5*dt);p.ovy=((p.ovy||0)-p.oy*38*dt)*(1-6.5*dt);
+      p.ox+=p.ovx*dt;p.oy+=p.ovy*dt;
+    }
+    this.draw(t);
+  };
+  Surface.prototype.draw=function(t){
+    var g=this.g,dpr=this.dpr,i,k,s;
+    g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,this.w,this.h);
+    // powder prints: a faint permanent one plus a fresh one after each snap
+    for(i=0;i<this.strings.length;i++){
+      s=this.strings[i];var pr=this.prints[i];
+      g.globalAlpha=Math.min(1,0.42+s.print*0.9);g.drawImage(pr.c,pr.x,pr.y,pr.c.width/dpr,pr.c.height/dpr);
+    }
+    // dust
+    for(i=0;i<this.parts.length;i++){
+      var p=this.parts[i],a=p.burst?p.a*Math.min(1,p.life/1.2):p.a*(0.7+0.3*Math.sin(t*0.8+p.ph));
+      g.globalAlpha=a;var d=p.r*4;g.drawImage(dot,p.x+p.ox-d/2,p.y+p.oy-d/2,d,d);
+    }
+    g.globalAlpha=1;
+    // strings: soft cast shadow, then the line
+    for(i=0;i<this.strings.length;i++){
+      s=this.strings[i];
+      var pts=[];for(k=0;k<POINTS;k++)pts.push(s.pt(k,t));
+      g.lineCap='round';g.lineJoin='round';
+      g.beginPath();for(k=0;k<POINTS;k++){var q=pts[k],lift=Math.abs(s.y[k])*0.12+2.5;k?g.lineTo(q[0]+lift*0.6,q[1]+lift):g.moveTo(q[0]+2,q[1]+3)}
+      g.strokeStyle='rgba(5,10,18,.32)';g.lineWidth=3.2;g.filter='blur(1.6px)';g.stroke();g.filter='none';
+      g.beginPath();for(k=0;k<POINTS;k++){k?g.lineTo(pts[k][0],pts[k][1]):g.moveTo(pts[k][0],pts[k][1])}
+      g.strokeStyle='rgb('+CHALK+')';g.lineWidth=2.1;g.stroke();
+    }
+  };
+
+  /* ---- SVG seam surface: a single string; fill follows the line ---- */
+  function Seam(svg){
+    this.svg=svg;this.visible=true;
+    var ns='http://www.w3.org/2000/svg';
+    svg.style.background=svg.dataset.from;
+    this.fill=document.createElementNS(ns,'path');this.fill.setAttribute('fill',svg.dataset.to);
+    this.shadow=document.createElementNS(ns,'path');this.shadow.setAttribute('class','shadow');
+    this.line=document.createElementNS(ns,'path');this.line.setAttribute('class','line');this.line.setAttribute('stroke',svg.dataset.line);
+    svg.appendChild(this.fill);svg.appendChild(this.shadow);svg.appendChild(this.line);
+    this.s=new Str(0,0,1,0,Math.random()*9);
+  }
+  Seam.prototype.resize=function(){
+    var r=this.svg.getBoundingClientRect();this.w=r.width;this.h=r.height;
+    this.svg.setAttribute('viewBox','0 0 '+this.w+' '+this.h);
+    this.s.set(-6,this.h*0.62,this.w+6,this.h*0.38);
+  };
+  Seam.prototype.frame=function(t,dt){
+    var r=this.svg.getBoundingClientRect(),s=this.s;
+    var tap=P.tap?{x:P.tap.x-r.left,y:P.tap.y-r.top}:null;
+    var inside=P.active&&P.y>r.top-90&&P.y<r.bottom+90;
+    s.interact(P.x-r.left,P.y-r.top,P.px-r.left,P.py-r.top,inside,tap,t);
+    s.step(dt);
+    var d='',sh='',k,q;
+    for(k=0;k<POINTS;k++){q=s.pt(k,t);d+=(k?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1);sh+=(k?'L':'M')+(q[0]+1.5).toFixed(1)+' '+(q[1]+3+Math.abs(s.y[k])*.1).toFixed(1)}
+    this.line.setAttribute('d',d);this.shadow.setAttribute('d',sh);
+    this.fill.setAttribute('d',d+'L'+(this.w+6)+' '+(this.h+2)+'L-6 '+(this.h+2)+'Z');
+  };
+
+  /* ---- Layouts ---- */
+  function heroLayout(w,h,sec){
+    // Roof gable sits above the headline: eaves clear the first line of type
+    var phone=w<760,sr=sec.getBoundingClientRect(),ar=document.getElementById('hero-actions').getBoundingClientRect();
+    var hr=sec.querySelector('h1').getBoundingClientRect(),lr=sec.querySelector('.hero-list').getBoundingClientRect();
+    var ground=Math.min(h-14,ar.bottom-sr.top+30),top=hr.top-sr.top+(phone?30:18);
+    var left=hr.left-sr.left,right=lr.width?lr.left-sr.left-28:w-left;
+    var px=phone?w*0.5:left+(right-left)*0.42,py=Math.max(phone?50:60,top-(phone?62:120));
+    var sl=(top-10-py)/Math.max(40,px-left+10);
+    var eL=px+8,eR=phone?w+8-px:right-px;
+    return [[px-eL,py+eL*sl,px,py],[px,py,px+eR,py+eR*sl],[-8,ground,w+8,ground-(phone?10:14)]];
+  }
+  function closeLayout(w,h,sec){
+    var phone=w<760,px=phone?w*0.5:w*0.3,py=phone?34:52,sl=phone?0.42:0.34,e=phone?w*0.62:w*0.45;
+    return [[px-e,py+e*sl,px,py],[px,py,px+e,py+e*sl]];
+  }
+
+  /* ---- Wire up ---- */
+  var hero=document.getElementById('hero'),close=document.getElementById('close');
+  var surfaces=[new Surface(hero,document.getElementById('hero-c'),heroLayout)];
+  var cs=new Surface(close,document.getElementById('close-c'),closeLayout);cs.dustScale=0.5;surfaces.push(cs);
+  document.querySelectorAll('[data-seam]').forEach(function(el){surfaces.push(new Seam(el))});
+  hero.classList.add('live');
+
+  function resizeAll(){surfaces.forEach(function(s){s.resize()})}
+  resizeAll();
+  var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){resizeAll();wake()},120)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(resizeAll);
+
+  var running=false,last=0,t0=performance.now();
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){surfaces.forEach(function(s){if((s.sec||s.svg)===e.target)s.visible=e.isIntersecting})});
+      wake();
+    },{rootMargin:'80px'});
+    surfaces.forEach(function(s){io.observe(s.sec||s.svg)});
+  }
+  function wake(){if(!running&&!REDUCED){running=true;last=performance.now();requestAnimationFrame(loop)}}
+  function loop(now){
+    var dt=Math.min(0.05,(now-last)/1000);last=now;var t=(now-t0)/1000;
+    var ddt=Math.max(dt,1/240);P.vx=(P.x-P.px)/ddt;P.vy=(P.y-P.py)/ddt;
+    var any=false;
+    surfaces.forEach(function(s){if(s.visible){any=true;s.frame(t,dt)}});
+    P.px=P.x;P.py=P.y;P.tap=null;
+    if(any)requestAnimationFrame(loop);else running=false;
+  }
+  if(REDUCED){surfaces.forEach(function(s){s.frame(0,0)})}else wake();
+})();
+
+/* ============================================================
+   Sticky call dock: shows once the hero buttons scroll away,
+   hides again when the closing call button is on screen.
+   ============================================================ */
+(function(){
+  var dock=document.getElementById('dock'),a=document.getElementById('hero-actions'),b=document.getElementById('close-actions');
+  if(!('IntersectionObserver' in window))return;
+  var seen={a:true,b:false};
+  function upd(){var on=!seen.a&&!seen.b;dock.classList.toggle('on',on);dock.setAttribute('aria-hidden',on?'false':'true');dock.querySelector('a').tabIndex=on?0:-1}
+  new IntersectionObserver(function(es){es.forEach(function(e){seen.a=e.isIntersecting});upd()}).observe(a);
+  new IntersectionObserver(function(es){es.forEach(function(e){seen.b=e.isIntersecting});upd()}).observe(b);
+})();
+</script>
+</body>
+</html>
