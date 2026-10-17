@@ -1,6 +1,6 @@
 # Enrique Valle Construction — handoff at ~60%
 
-**Live file:** index.html · **Repo:** https://github.com/10elizabethbell/enriqueValleConstruction · **Built:** 2026-10-08 from Muse brief (run 2026-10-08, NJ Home Improvement Contractors group post)
+**Live:** https://10elizabethbell.github.io/enriqueValleConstruction/ · **File:** index.html · **Repo:** https://github.com/10elizabethbell/enriqueValleConstruction · **Built:** 2026-10-08 from Muse brief (run 2026-10-08, NJ Home Improvement Contractors group post)
 
 ## What's built
 - **World: snapped chalk line.** Slate-navy layout surface (#172433), yellow chalk (#f5c518, his flyer's yellow), a pale slab section with blue chalk for services.
@@ -25,7 +25,7 @@
 - **No work photos at all.** The flyer's background art (hard hat, framing) is stock/AI, not his work, so it isn't used. A proof section is the first thing to add once he sends photos.
 - No hours, email, service-area towns, reviews, prices, licence/insurance. None are shown.
 - Texting unconfirmed: no SMS button.
-- **No Facebook link preview image.** `og:image` needs an absolute URL, so it waits until the site is hosted (GitHub Pages isn't turned on). Then render the phone hero at 1200x630 as `og.png` and add `og:image`, `og:image:width/height` and `og:url`. Until then the shared link shows a text-only card.
+- **No Facebook link preview image.** `og:image` needs an absolute URL, now possible since GitHub Pages is on (2026-10-17). Next: render the phone hero at 1200x630 as `og.png` and add `og:image`, `og:image:width/height` and `og:url`. Until then the shared link shows a text-only card.
 
 ## Questions for the owner
 - Is the business name Enrique Valle Construction? Who's Kelvin, and should the page say "I" or "we"?
